@@ -52,8 +52,8 @@ const Example = () => {
                             }}
                             pattern="^[A-Z].*"
                             onChange={(e) => onChange(i, { value: e.target.value, checked: x.checked })}
-                            value={x.value}
                             className="input"
+                            value={x.value}
                         />
                         <button type="button" onClick={() => onRemove(i)}>
                             🗑️
@@ -71,10 +71,10 @@ const Example = () => {
     );
 };
 
-export default function FormWithListPage() {
+export default function ValidityStatePage() {
     return (
         <main>
-            <Markdown title="form-with-list" />
+            <Markdown title="validity-state" />
             <Example />
         </main>
     );

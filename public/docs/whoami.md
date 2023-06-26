@@ -1,5 +1,5 @@
 # whoami
 
 - Senior Frontend Engineer
-- Evangelizador Typescript
+- Evangelizador Typescript - [Live](https://www.youtube.com/watch?v=gPrtdo-hewo)
 - [garcez.dev](https://garcez.dev)

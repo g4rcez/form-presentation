@@ -29,14 +29,11 @@ dependencies:
   qs:
     specifier: 6.11.2
     version: 6.11.2
-  qs@latest:
-    specifier: link:types/qs@latest
-    version: link:types/qs@latest
   react:
-    specifier: ^18.2.0
+    specifier: 18.2.0
     version: 18.2.0
   react-dom:
-    specifier: ^18.2.0
+    specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   react-markdown:
     specifier: 8.0.7
@@ -56,19 +53,19 @@ dependencies:
 
 devDependencies:
   '@types/react':
-    specifier: ^18.0.37
+    specifier: 18.0.37
     version: 18.0.37
   '@types/react-dom':
-    specifier: ^18.0.11
+    specifier: 18.0.11
     version: 18.0.11
   '@vitejs/plugin-react-swc':
-    specifier: ^3.0.0
+    specifier: 3.0.0
     version: 3.0.0(vite@4.3.9)
   autoprefixer:
-    specifier: ^10.4.14
+    specifier: 10.4.14
     version: 10.4.14(postcss@8.4.24)
   postcss:
-    specifier: ^8.4.24
+    specifier: 8.4.24
     version: 8.4.24
   prettier:
     specifier: 2.8.8
@@ -77,13 +74,13 @@ devDependencies:
     specifier: 0.3.0
     version: 0.3.0(prettier@2.8.8)
   tailwindcss:
-    specifier: ^3.3.2
+    specifier: 3.3.2
     version: 3.3.2
   typescript:
-    specifier: ^5.1.3
+    specifier: 5.1.3
     version: 5.1.3
   vite:
-    specifier: ^4.3.9
+    specifier: 4.3.9
     version: 4.3.9
 
 packages:
