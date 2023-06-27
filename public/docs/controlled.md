@@ -4,6 +4,7 @@
 - Permite interatividade via estado
 - Facilita a interação entre campos do form
 - -DomAPI, +React
+- Forma mais utilizada em [NextJS](https://nextjs.org/) e aplicações React
 
 ```tsx
 const Example = () => {

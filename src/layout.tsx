@@ -15,7 +15,7 @@ const getSlides = (href: string) => {
 };
 
 const Arrow = (props: { item: { path: string }; Arrow: React.FC<any> }) => (
-    <nav className="flex min-h-full grow items-center justify-center px-4 w-20">
+    <nav className="flex min-h-[90vh] grow items-center justify-center px-4 w-20">
         {props.item ? (
             <Link href={props.item.path} className="text-2xl opacity-20">
                 <props.Arrow width={64} height={64} />

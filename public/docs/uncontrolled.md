@@ -3,6 +3,7 @@
 - Web 1999
 - Sem interação de estado
 - +DomAPI, -React
+- Forma utilizada pelo [remix.run](https://remix.run)
 
 ```tsx
 export const UncontrolledExample = () => {

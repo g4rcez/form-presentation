@@ -1,7 +1,6 @@
-type Props<C extends React.ElementType> = {
-    as?: C;
-    children: React.ReactNode;
-} & React.ComponentPropsWithoutRef<C>;
+type Polymorphism<T extends React.ElementType> = React.PropsWithChildren<{ as?: T }>;
+
+type Props<T extends React.ElementType> = Polymorphism<T> & Omit<React.ComponentPropsWithRef<T>, keyof Polymorphism<T>>;
 
 export const Anchor = <AS extends React.ElementType = "a">({ as, ...props }: Props<AS>) => {
     const Component = as || "a";
