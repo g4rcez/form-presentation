@@ -15,7 +15,7 @@ const Example = () => {
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const json = formAsJson<State>(e.currentTarget);
-        alert(JSON.stringify(json, null, 4));
+        console.log(JSON.stringify(json, null, 4));
     };
 
     return (
@@ -26,7 +26,7 @@ const Example = () => {
                 <ul className="w-full">
                     {list.map((x) => (
                         <li key={`input-${x}`} className="mb-4 flex gap-3 border-b border-slate-400 pb-2">
-                            <input name={form(`items[${x}].href`)} placeholder="Midia social" required />
+                            <input name={form(`items[${x}].socialMedia`)} placeholder="Midia social" required />
                             <input
                                 name={form(`items[${x}].href`)}
                                 placeholder="https://example.com"
