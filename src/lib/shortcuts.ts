@@ -105,24 +105,5 @@ export const shortcutKeys = (element: HTMLElement | Window) => {
 
     const list = () => ({ ...shortcutMap });
 
-    return {
-        removeAll,
-        /**
-         * @description Add event to element
-         * @param shortcut - Required - Shortcut to trigger action. Example: "control+h" or ["control+h", "control+shift+h"]
-         * @param handler - Required - Action triggered when shortcut is triggered. Example: () => console.log("hello");
-         * @param options - Optional - Extra settings. Read the documentation {@link "https://www.npmjs.com/package/shortcut-keys"}
-         */
-        add,
-        /**
-         * @description Remove exists event to element
-         * @param shortcut - Optional - Shortcut to trigger action. Example: "control+h" or ["control+h", "control+shift+h"]. When there is no data, all element events will be removed.
-         */
-        remove,
-        /**
-         * @description List all events of element
-         * @returns Object with all active event information
-         */
-        list,
-    };
+    return { removeAll, add, remove, list };
 };

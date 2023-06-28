@@ -7,7 +7,7 @@ import json5 from "json5";
 import parseNumericRange from "parse-numeric-range";
 import { visit } from "unist-util-visit";
 
-export const langs: Lang[] = ["css", "html", "javascript", "typescript", "tsx"];
+const langs: Lang[] = ["css", "html", "javascript", "typescript", "tsx"];
 
 const components = {
     a: Anchor,
@@ -39,7 +39,7 @@ const remarkShiki = (props: { highlighter: Highlighter }) => {
     };
 };
 
-function parseMetaDefault(meta: any) {
+function parseMetaDefault(meta: string | null) {
     if (meta === null || meta?.length === 0) return undefined;
     try {
         const parsed = json5.parse(meta);
@@ -68,7 +68,6 @@ export const Shiki = (props: React.PropsWithChildren) => {
 export const Markdown = (props: { title: string }) => {
     const [content, setContent] = useState("");
     const shiki = useShiki();
-    const plugins: any[] = shiki ? [remarkGfm, [remarkShiki, { highlighter: shiki }]] : [remarkGfm];
 
     useEffect(() => {
         (async () => {
@@ -82,7 +81,7 @@ export const Markdown = (props: { title: string }) => {
             children={content}
             className="prose prose-indigo w-full max-w-none px-2 lg:prose-xl"
             components={components}
-            remarkPlugins={plugins}
+            remarkPlugins={shiki ? [remarkGfm, [remarkShiki, { highlighter: shiki }]] : [remarkGfm]}
         />
     );
 };
