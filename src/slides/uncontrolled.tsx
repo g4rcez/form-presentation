@@ -14,7 +14,7 @@ const UncontrolledExample = () => {
         <form onSubmit={onSubmit} className="flex flex-row gap-4">
             <input required minLength={2} pattern="^[A-Z].*" placeholder="Seu nome" name="userName" />
             <input required minLength={2} pattern="^[A-Z].*" placeholder="Seu sobrenome" name="userLastName" />
-            <button type="submit" className="rounded-lg bg-blue-500 px-4 py-1 text-white">
+            <button type="submit" className="rounded-lg bg-green-500 px-4 py-1 text-white">
                 Submit
             </button>
         </form>

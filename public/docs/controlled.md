@@ -3,7 +3,7 @@
 - Requer renderização do React
 - Permite interatividade via estado
 - Facilita a interação entre campos do form
-- -DomAPI, +React
+- -DomAPI, [+React](https://react.dev/reference/react-dom/components/textarea#caveats)
 - Forma mais utilizada em [NextJS](https://nextjs.org/) e aplicações React
 
 ```tsx
@@ -24,7 +24,7 @@ const Example = () => {
         <form onSubmit={onSubmit} className="flex flex-row gap-4">
             <input {...commonOptions} placeholder="Seu nome" name="name" />
             <input {...commonOptions} placeholder="Seu sobrenome" name="lastName" />
-            <button type="submit" className="rounded-lg bg-blue-500 px-4 py-1 text-white">
+            <button type="submit" className="rounded-lg bg-green-500 px-4 py-1 text-white">
                 Submit
             </button>
         </form>

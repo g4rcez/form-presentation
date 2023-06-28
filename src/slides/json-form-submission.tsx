@@ -43,7 +43,7 @@ const Example = () => {
                     Add Item
                 </button>
             </div>
-            <button type="submit" className="w-fit rounded-lg bg-blue-600 px-4 py-1 text-white">
+            <button type="submit" className="w-fit rounded-lg bg-green-600 px-4 py-1 text-white">
                 Add Item
             </button>
         </form>

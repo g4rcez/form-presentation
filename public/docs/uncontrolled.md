@@ -2,7 +2,7 @@
 
 - Web 1999
 - Sem interação de estado
-- +DomAPI, -React
+- +DomAPI, [-React](https://react.dev/reference/react-dom/components/textarea#im-getting-an-error-a-component-is-changing-an-uncontrolled-input-to-be-controlled)
 - Forma utilizada pelo [remix.run](https://remix.run)
 
 ```tsx
@@ -19,7 +19,7 @@ export const UncontrolledExample = () => {
         <form onSubmit={onSubmit}>
             <input required minLength={2} pattern="^[A-Z].*" placeholder="Seu nome" name="userName" />
             <input required minLength={2} pattern="^[A-Z].*" placeholder="Seu sobrenome" name="userLastName" />
-            <button type="submit" className="rounded-lg bg-blue-500 px-4 py-1 text-white">Submit</button>
+            <button type="submit" className="rounded-lg bg-green-500 px-4 py-1 text-white">Submit</button>
         </form>
     );
 };

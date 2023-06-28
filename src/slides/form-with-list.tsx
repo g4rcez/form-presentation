@@ -61,10 +61,10 @@ const Example = () => {
                     </li>
                 ))}
             </ul>
-            <button onClick={addToDo} type="button" className="rounded-lg bg-blue-500 px-4 py-1 text-white">
+            <button onClick={addToDo} type="button" className="rounded-lg bg-green-500 px-4 py-1 text-white">
                 +Add To Do
             </button>
-            <button type="submit" className="rounded-lg bg-blue-500 px-4 py-1 text-white">
+            <button type="submit" className="rounded-lg bg-green-500 px-4 py-1 text-white">
                 Submit
             </button>
         </form>
